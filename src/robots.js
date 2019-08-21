@@ -19,7 +19,7 @@ export const robots = [
     },
     {
         id: 4,
-        name: 'Antoaneta Salorico',
+        name: 'Antoaneta Sarico',
         username: 'Chris',
         email: 'Antoaneta@salorico.com'
     },

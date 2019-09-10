@@ -11,9 +11,15 @@ class App extends Component {
             searchfield: ''
         };
     }
-    onSearchChange(event) {
-        console.log(event.target.value);
-    }
+    onSearchChange = event => {
+        this.setState({ searchfield: event.target.value });
+        const filteredRobots = this.state.robots.filter(robot => {
+            return robot.name
+                .toLowerCase()
+                .includes(this.state.searchfield.toLowerCase());
+        });
+        console.log(filteredRobots);
+    };
     render() {
         return (
             <div className="tc">
